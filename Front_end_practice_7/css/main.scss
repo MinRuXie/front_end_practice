@@ -1,0 +1,394 @@
+$color-black: #000;
+$color-white: #FFF;
+
+* {
+    font-family: 'Arial', 'Noto Sans TC', serif;
+}
+
+h1 {
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.menu {
+    width: 100%;
+    height: 86px;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+
+    .menu-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.6s;
+
+        .logo-box {
+            height: 40px;
+            display: inline-block;
+            margin-right: 20px;
+            
+            img {
+                height: 100%;
+            }
+        }
+
+        .navbar {
+            display: inline-flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+
+            a.navbar-item {
+                display: inline-block;
+                color: $color-black;
+                width: 80px;
+                height: 24px;
+                position: relative;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                span {
+                    font-family: 'Sorts Mill Goudy', 'Noto Serif TC', serif;
+                }
+
+                span.zh {
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    opacity: 0; //消失
+                    transition: 0.3s;
+                }
+
+                span.en {
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+
+            }
+        }
+    
+        .hamburger-part {
+            display: inline-flex;
+            align-items: center;
+
+            .shop-box {
+                height: 30px;
+                display: inline-block;
+                margin-left: 20px;
+        
+                img {
+                    height: 100%;
+                }
+            }
+
+            .hamburger-box {
+                margin-left: 30px;
+                cursor: pointer;
+
+                .hamburger-black {
+                    height: 40px;
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .hamburger-top {
+                        height: 33.3%;
+                        transition: 0.3s;
+                    }
+                    
+                    .hamburger-middle {
+                        height: 33.3%;
+                        
+                        .hamburger-middle-left {
+                            display: inline-block;
+                            transition: 0.3s;
+                        }
+
+                        .hamburger-middle-right {
+                            display: inline-block;
+                            transition: 0.3s;
+                        }
+                    }
+                    
+                    .hamburger-bottom {
+                        height: 33.3%;
+                        transition: 0.3s;
+                    }
+
+                    &:hover {
+                        .hamburger-top {
+                            transform: translateY(-3px);
+                        }
+
+                        .hamburger-middle {
+                            .hamburger-middle-left {
+                                transform: translateX(-3px);
+                            }
+                            .hamburger-middle-right {
+                                transform: translateX(3px);
+                            }
+                        }
+
+                        .hamburger-bottom {
+                            transform: translateY(3px);
+                        }
+                    }
+                }
+
+                .hamburger-white {
+                    height: 40px;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+.main-part {
+    height: 100vh;
+    background-image: url('../images/home-banner1.jpg');
+    background-position-y: 95%;
+    background-size: cover;
+    overflow: hidden;
+    // background-attachment: fixed;
+    
+    .main-box {
+        height: 100%;
+        position: relative;
+
+        .scrolldown-box {
+            position: absolute;
+            z-index: 5;
+            bottom: 5%;
+            left: 40%;
+            cursor: pointer;
+        }
+
+        #scene {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .person-center {
+                position: absolute;
+                z-index: 1;
+                top: 25% !important;
+                left: 15% !important;
+            }
+
+            .person-right {
+                position: absolute;
+                z-index: 3;
+                top: 60% !important;
+                left: 70% !important;
+            }
+
+            .person-left {
+                position: absolute;
+                z-index: 2;
+                top: 50% !important;
+                left: 10% !important;
+            }
+
+            .drink {
+                position: absolute;
+                z-index: 4;
+                top: 10% !important;
+                left: 40% !important;
+            }
+        }
+    }
+
+    
+}
+
+.story-part {
+    height: calc(100vh - 86px);
+    background-color: $color-black;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    
+    .text-box {
+        // width: 55vw;
+
+        h1, p {
+            text-align: center;
+            color: $color-white;
+        }
+
+        h1 {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.material-part {
+    height: calc(100vh - 86px);
+    // background-image: url('../images/home-banner.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    background-color: $color-white;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+    .loading-img-box {
+        width: 100px;
+        animation-name: rotate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@keyframes rotate {
+    to {transform: rotate(0);}
+    from {transform: rotate(360deg);}
+}
+
+
+/* 平板 */
+@media (max-width: 768px) {
+    .menu {
+        .container {
+            padding: 0 10px;
+
+            .row {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+        }
+
+        .menu-box {
+            justify-content: space-between;
+
+            .navbar {
+                display: none;
+            }
+        }
+    }
+
+    .main-part {
+        .main-box {
+            #scene {
+                .person-center {
+                    left: 29% !important;
+                }
+    
+                .person-left {
+                    left: -29% !important;
+                }
+    
+                .drink {
+                    top: 14% !important;
+                    left: 27% !important;
+                }
+            }
+
+            .scrolldown-box {
+                left: 27%;
+            }
+        }
+    }
+}
+
+/* 手機 */
+@media (max-width: 480px) {
+    .menu {
+        .menu-box {
+            .hamburger-part {
+                .shop-box {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .main-part {
+        .main-box {
+            #scene {
+                .person-center {
+                    left: 48% !important;
+                }
+
+                .person-left {
+                    left: -80% !important;
+                }
+
+                .drink {
+                    width: 70vw;
+                    left: 12% !important;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .scrolldown-box {
+                width: 50vw;
+                left: 21%;
+                bottom: 10%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .story-part {
+        // height: auto;
+        padding: 40px 0;
+
+        .text-box {
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 0.5rem; 
+            }
+        }
+    }
+}

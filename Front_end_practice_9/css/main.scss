@@ -1,0 +1,796 @@
+$color-yellow: #FFDB60;
+$color-dark-yellow: #F4A91E;
+$color-blue: #23C8C8;
+$color-dark-blue: #1E5A91;
+$color-purple: #A0B4F5;
+$color-black: #3E454F;
+$color-brown: #E1AE46;
+$color-white: #FFF;
+
+* {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+// #menu {
+//     width: 100%;
+//     height: 80px;
+//     background-color: $color-yellow;
+//     border-bottom: 3px solid $color-black;
+//     position: fixed;
+//     z-index: 999;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     align-items: center;
+
+//     .menu-pc {
+//         padding: 0 100px;
+
+//         @media screen and (max-width: 768px) {
+//             display: none;
+//         }
+
+//         .menu-box {
+//             width: 100%;
+//             height: 100%;
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+
+//             .logo-box {
+//                 display: inline-block;
+//                 height: 60px;
+
+//                 img {
+//                     height: 100%;
+//                 }
+//             }
+
+//             .item-box {
+//                 display: inline-flex;
+//                 align-items: center;
+
+//                 .item {
+//                     display: inline-block;
+//                     padding: 0 15px;
+//                     color: $color-black;
+
+//                     font: {
+//                         size: 20px;
+//                         weight: bold;
+//                     }
+
+//                     &:hover {
+//                         color: $color-blue;
+//                         text-decoration: none;
+//                     }
+
+//                     .img-box {
+//                         height: 40px;
+//                         position: relative;
+
+//                         img {
+//                             height: 100%;
+//                         }
+//                     }
+
+//                     #fbicon:hover, #fbicon:focus-within,
+//                     #lineicon:hover, #lineicon:focus-within {
+//                         img {
+//                             opacity: 0; /* 讓原本的黑色圖片消失, 不然會有黑邊邊 */
+//                         }
+//                     }
+
+//                     #fbicon:hover::before, #fbicon:focus-within::before,
+//                     #lineicon:hover::before, #lineicon:focus-within::before {
+//                         transform: scale(1);
+//                     }
+
+//                     #fbicon::before {
+//                         content: url('../images/fbIcons_act.png');
+//                         position: absolute;
+//                         z-index: 1;
+//                         top: 0;
+//                         left: 0;
+//                         transform: scale(0);
+//                     }
+
+//                     #lineicon::before {
+//                         content: url('../images/lineIcons_act.png');
+//                         position: absolute;
+//                         z-index: 1;
+//                         top: 0;
+//                         left: 0;
+//                         transform: scale(0);
+//                     }
+
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+#main {
+    width: 100%;
+    // height: calc(100vh - 80px);
+    height: 100vh;
+    position: relative;
+    // margin-top: 80px;
+
+    @media screen and (max-width: 768px) {
+        // height: 44vh;
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 60%;
+        display: block;
+        background-color: $color-dark-blue;
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 40%;
+        display: block;
+        background-color: $color-blue;
+    }
+
+    .scroll-down {
+        bottom: -90px;
+    }
+
+    .flag-box {
+        padding: 0 100px;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: -18px;
+        left: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .title-box {
+        width: 30vw;
+        position: absolute;
+        z-index: 2;
+        top: 10vh;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: 768px) {
+            width: 50vw;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .star-box {
+        width: 30vw;
+        position: absolute;
+        z-index: 3;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-55%);
+        animation-name: twinkling;
+        animation-duration: 0.3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        @media screen and (max-width: 768px) {
+            width: 50vw;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .special-effects-left {
+        position: absolute;
+        z-index: 3;
+        top: 100px;
+        left: 18%;
+        width: 160px;
+        height: 160px;
+        animation-name: hanabi-up;
+        animation-delay: 0.6s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+
+        .hanabi-box {
+            width: 100%;
+            position: absolute;
+            z-index: 3;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .coin-box {
+            width: 100%;
+            position: absolute;
+            z-index: 4;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .special-effects-right {
+        position: absolute;
+        z-index: 3;
+        top: 170px;
+        right: 14%;
+        width: 160px;
+        height: 160px;
+        animation-name: hanabi-up;
+        animation-delay: 0.9s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+
+        .hanabi-box {
+            width: 100%;
+            position: absolute;
+            z-index: 3;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .coin-box {
+            width: 100%;
+            position: absolute;
+            z-index: 4;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .special-effects-center-left {
+        position: absolute;
+        z-index: 3;
+        top: 72px;
+        left: 30%;
+        width: 100px;
+        height: 100px;
+        animation-name: hanabi-toleft;
+        animation-delay: 0.3s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+
+        .hanabi-box {
+            width: 100%;
+            position: absolute;
+            z-index: 3;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .coin-box {
+            width: 100%;
+            position: absolute;
+            z-index: 4;
+            top: 10%;
+            left: 12%;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .special-effects-center-right {
+        position: absolute;
+        z-index: 3;
+        top: 72px;
+        right: 26%;
+        width: 180px;
+        height: 180px;
+        animation-name: hanabi-toright;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+
+        .hanabi-box {
+            width: 100%;
+            position: absolute;
+            z-index: 3;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .coin-box {
+            width: 100%;
+            position: absolute;
+            z-index: 4;
+            top: 6%;
+            left: -4%;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    .bg-box {
+        height: 530px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: 1024px) and (orientation: portrait) {
+            top: 35vw;
+        }
+
+        @media screen and (max-width: 768px) {
+            top: 20vw;
+        }
+
+        @media screen and (max-width: 480px) {
+            top: 50px;
+        }
+
+        @media screen and (max-width: 360px) {
+            top: -90px;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .dog-box {
+        width: 350px;
+        position: absolute;
+        z-index: 2;
+        top: 37vh;
+        left: 50%;
+        transform: translateX(-63%);
+
+        @media screen and (max-width: 1024px) and (orientation: portrait) {
+            top: 64vw;
+        }
+
+        @media screen and (max-width: 768px) {
+            top: 59vw;
+        }
+
+        @media screen and (max-width: 480px) {
+            top: 340px;
+        }
+
+        @media screen and (max-width: 360px) {
+            top: 210px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+#offer {
+    position: relative;
+
+    .top-mask {
+        width: 100%;
+        height: 47px;
+        display: flex;
+        overflow: hidden;
+
+        .img-box {
+            width: 1200px;
+            height: 100%;
+            display: inline-block;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            background-color: $color-blue;
+            border-bottom: 2.5px solid $color-black;
+            box-sizing: border-box;
+            width: calc((100% - 1200px)/2);
+            height: 100%;
+            display: inline-block;
+        }
+    }
+
+    .offer-wrapper {
+        width: 100%;
+        height: calc(100% - 47px);
+        position: relative;
+
+        .offer-content {
+            display: inline-flex;
+            flex-direction: column;
+            position: absolute;
+            top: 320px;
+            left: 50%;
+            transform: translateX(-90%);
+        }
+
+        .sub-wrapper + .sub-wrapper {
+            margin-top: 5px;
+        }
+        
+        .sub-wrapper {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .mask {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            animation-name: twinkling;
+            animation-duration: 3s;
+            animation-delay: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        .light {
+            width: 85px;
+            position: absolute;
+            z-index: 3;
+            top: 37px;
+            right: 0;
+            opacity: 0;
+            animation-name: twinkling;
+            animation-duration: 3s;
+            animation-delay: 1.8s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        .offer-detail {
+            display: inline-block;
+            position: relative;
+            top: 470px;
+            left: 50%;
+            transform: translateX(-90%);
+
+            @media screen and (max-width: 768px) {
+                transform: translateX(-80%);
+            }
+
+            ul {
+                margin: 0;
+                padding: 15px 20px;
+
+                li {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* 手機框 */
+.phone-wrapper {
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    top: 255px;
+    left: 50%;
+    transform: translateX(100%);
+
+    @media screen and (max-width: 768px) {
+        transform: translateX(80%);
+    }
+
+    .phone-img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .phone-page {
+        width: 100%;
+        padding: 0 4px;
+        position: relative;
+        top: 38px;
+        left: 0;
+        z-index: 1;
+
+        .img-box {
+            position: relative;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/* 覆蓋輪播圖外掛的樣式 */
+.owl-theme {
+    .owl-dots {
+        .owl-dot {
+            span {
+                width: 14px;
+                height: 14px;
+                background-color: $color-white;
+                border-radius: 6px;
+                border: 2px solid $color-brown;
+                margin: 5px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                span {
+                    background-color: $color-white;
+                }
+            }
+        }
+
+        .owl-dot.active {
+            span {
+                background-color: $color-brown;
+            }
+        }
+    }  
+}
+
+
+/* 上邊框粗線 */
+.top-bold-border {
+    border-top: 3px solid $color-black;
+}
+
+/* 整頁樣式 */
+.fullpage {
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: relative;
+}
+
+/* 點點背景 */
+.dot-bg {
+    background-image: url('../images/offer_bg.png');
+}
+
+/* 藍天雲背景 */
+.blue-clound-bg {
+    background-color: $color-blue;
+}
+
+/* 旗子 */
+.page-flag {
+    width: 170px;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-210%);
+
+    img {
+        width: 100%;
+    }
+}
+
+/* 標題 */
+.page-title {
+    height: 150px;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+        height: 100%;
+    }
+}
+
+
+/* 子標題: 版本一 */
+.sub-title-first {
+    font-size: 30px;
+    font-weight: bold;
+    color: $color-blue;
+    margin-right: 10px;
+
+    &::before {
+        content: url('../images/bell.svg');
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
+
+.sub-content {
+    color: $color-black;
+    font-weight: bold;
+}
+
+/* 下滑動按鈕 */
+.scroll-down {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    span {
+        font-size: 12px;
+        animation-name: twinkling;
+        animation-duration: 0.6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .img-box {
+        width: 40px;
+        height: 40px;
+        background-color: $color-yellow;
+        border: 2px solid $color-black;
+        border-radius: 100px;
+        margin-top: 10px;
+        animation-name: float;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+/* 全站 GO 按鈕 */
+.detail-btn {
+    background-color: $color-purple;
+    border: 3px solid $color-black;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 30px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-brown;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    &::after {
+        content: url('../images/btn_arrow.png');
+        width: 10px;
+        margin-left: 15px;
+    }
+}
+
+
+/* 閃爍, 淡出入 */
+@keyframes twinkling {
+    to { opacity: 1; }
+    from { opacity: 0; }
+}
+
+/* 漂浮 */
+@keyframes float {
+    to { transform: translateY(0); }
+    from { transform: translateY(5px); }
+}
+
+/* 往上放煙火 */
+@keyframes hanabi-up {
+    0% { 
+        opacity: 0.5;
+        transform: scale(0.2) translateY(0);
+    }
+    30% { 
+        opacity: 1;
+        transform: scale(0.2) translateY(-60px);
+    }
+    50% { 
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+    100% { 
+        opacity: 0;
+        transform: scale(1)  translateY(30px);
+    }
+}
+
+/* 往左上放煙火 */
+@keyframes hanabi-toleft {
+    0% { 
+        opacity: 0.5;
+        transform: scale(0.2) translate(500px, 200px);
+    }
+    30% { 
+        opacity: 1;
+        transform: scale(0.2) translate(0);
+    }
+    50% { 
+        opacity: 1;
+        transform: scale(1) translate(0, -10px);
+    }
+    100% { 
+        opacity: 0;
+        transform: scale(1)  translate(0, 60px);
+    }
+}
+
+/* 往右上放煙火 */
+@keyframes hanabi-toright {
+    0% { 
+        opacity: 0.5;
+        transform: scale(0.2) translate(-500px, 500px);
+    }
+    30% { 
+        opacity: 1;
+        transform: scale(0.2) translate(0);
+    }
+    50% { 
+        opacity: 1;
+        transform: scale(1) translate(0, 10px);
+    }
+    100% { 
+        opacity: 0;
+        transform: scale(1)  translate(0, 60px);
+    }
+}

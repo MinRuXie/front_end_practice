@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="103px" viewBox="0 0 54 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L44,0 C49.5228475,-1.01453063e-15 54,4.4771525 54,10 L54,90 C54,95.5228475 49.5228475,100 44,100 L0,100 L0,0 Z" id="path-1"></path>
+        <filter x="-2.8%" y="-1.5%" width="105.6%" height="106.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.129411765   0 0 0 0 0.57254902   0 0 0 0 0.266666667  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="energy-park" transform="translate(-1132.000000, -1480.000000)">
+            <g id="Group-3" transform="translate(1132.000000, 1480.000000)">
+                <g id="Rectangle-7">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#8DC63F" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M20.0040984,65 C19.8702179,65 19.7411208,64.9755623 19.6168033,64.9266862 C19.4924857,64.8778101 19.3825141,64.8044971 19.2868852,64.7067449 C19.0956275,64.5112405 19,64.2766387 19,64.0029326 C19,63.7292264 19.0956275,63.4946246 19.2868852,63.2991202 L32.397541,49.8973607 L19.4877049,36.7302053 C19.2964471,36.5347009 19.2008197,36.2952116 19.2008197,36.0117302 C19.2008197,35.7282488 19.2964471,35.4887595 19.4877049,35.2932551 C19.6789627,35.0977507 19.91325,35 20.1905738,35 C20.4678976,35 20.7021848,35.0977507 20.8934426,35.2932551 L34.4631148,49.1935484 C34.6543725,49.3890528 34.75,49.6236545 34.75,49.8973607 C34.75,50.1710669 34.6543725,50.4056686 34.4631148,50.601173 L20.692623,64.7067449 C20.5969941,64.8044971 20.4870225,64.8778101 20.3627049,64.9266862 C20.2383874,64.9755623 20.118853,65 20.0040984,65 Z" id="Arrow-right---simple-line-icons" fill="#EEEEEE"></path>
+            </g>
+        </g>
+    </g>
+</svg>

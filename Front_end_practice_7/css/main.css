@@ -1,0 +1,309 @@
+@charset "UTF-8";
+* {
+  font-family: "Arial", "Noto Sans TC", serif;
+}
+
+h1 {
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.menu {
+  width: 100%;
+  height: 86px;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+}
+.menu .menu-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+}
+.menu .menu-box .logo-box {
+  height: 40px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.menu .menu-box .logo-box img {
+  height: 100%;
+}
+.menu .menu-box .navbar {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.menu .menu-box .navbar a.navbar-item {
+  display: inline-block;
+  color: #000;
+  width: 80px;
+  height: 24px;
+  position: relative;
+}
+.menu .menu-box .navbar a.navbar-item:hover {
+  text-decoration: none;
+}
+.menu .menu-box .navbar a.navbar-item span {
+  font-family: "Sorts Mill Goudy", "Noto Serif TC", serif;
+}
+.menu .menu-box .navbar a.navbar-item span.zh {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.menu .menu-box .navbar a.navbar-item span.en {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  transition: 0.3s;
+}
+.menu .menu-box .hamburger-part {
+  display: inline-flex;
+  align-items: center;
+}
+.menu .menu-box .hamburger-part .shop-box {
+  height: 30px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.menu .menu-box .hamburger-part .shop-box img {
+  height: 100%;
+}
+.menu .menu-box .hamburger-part .hamburger-box {
+  margin-left: 30px;
+  cursor: pointer;
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black {
+  height: 40px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black .hamburger-top {
+  height: 33.3%;
+  transition: 0.3s;
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black .hamburger-middle {
+  height: 33.3%;
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black .hamburger-middle .hamburger-middle-left {
+  display: inline-block;
+  transition: 0.3s;
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black .hamburger-middle .hamburger-middle-right {
+  display: inline-block;
+  transition: 0.3s;
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black .hamburger-bottom {
+  height: 33.3%;
+  transition: 0.3s;
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black:hover .hamburger-top {
+  transform: translateY(-3px);
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black:hover .hamburger-middle .hamburger-middle-left {
+  transform: translateX(-3px);
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black:hover .hamburger-middle .hamburger-middle-right {
+  transform: translateX(3px);
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-black:hover .hamburger-bottom {
+  transform: translateY(3px);
+}
+.menu .menu-box .hamburger-part .hamburger-box .hamburger-white {
+  height: 40px;
+  display: none;
+}
+
+.main-part {
+  height: 100vh;
+  background-image: url("../images/home-banner1.jpg");
+  background-position-y: 95%;
+  background-size: cover;
+  overflow: hidden;
+}
+.main-part .main-box {
+  height: 100%;
+  position: relative;
+}
+.main-part .main-box .scrolldown-box {
+  position: absolute;
+  z-index: 5;
+  bottom: 5%;
+  left: 40%;
+  cursor: pointer;
+}
+.main-part .main-box #scene {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main-part .main-box #scene .person-center {
+  position: absolute;
+  z-index: 1;
+  top: 25% !important;
+  left: 15% !important;
+}
+.main-part .main-box #scene .person-right {
+  position: absolute;
+  z-index: 3;
+  top: 60% !important;
+  left: 70% !important;
+}
+.main-part .main-box #scene .person-left {
+  position: absolute;
+  z-index: 2;
+  top: 50% !important;
+  left: 10% !important;
+}
+.main-part .main-box #scene .drink {
+  position: absolute;
+  z-index: 4;
+  top: 10% !important;
+  left: 40% !important;
+}
+
+.story-part {
+  height: calc(100vh - 86px);
+  background-color: #000;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+}
+.story-part .text-box h1, .story-part .text-box p {
+  text-align: center;
+  color: #FFF;
+}
+.story-part .text-box h1 {
+  margin-bottom: 100px;
+}
+
+.material-part {
+  height: calc(100vh - 86px);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: #FFF;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+.loading .loading-img-box {
+  width: 100px;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.loading .loading-img-box img {
+  width: 100%;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(0);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+/* 平板 */
+@media (max-width: 768px) {
+  .menu .container {
+    padding: 0 10px;
+  }
+  .menu .container .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .menu .menu-box {
+    justify-content: space-between;
+  }
+  .menu .menu-box .navbar {
+    display: none;
+  }
+
+  .main-part .main-box #scene .person-center {
+    left: 29% !important;
+  }
+  .main-part .main-box #scene .person-left {
+    left: -29% !important;
+  }
+  .main-part .main-box #scene .drink {
+    top: 14% !important;
+    left: 27% !important;
+  }
+  .main-part .main-box .scrolldown-box {
+    left: 27%;
+  }
+}
+/* 手機 */
+@media (max-width: 480px) {
+  .menu .menu-box .hamburger-part .shop-box {
+    display: none;
+  }
+
+  .main-part .main-box #scene .person-center {
+    left: 48% !important;
+  }
+  .main-part .main-box #scene .person-left {
+    left: -80% !important;
+  }
+  .main-part .main-box #scene .drink {
+    width: 70vw;
+    left: 12% !important;
+  }
+  .main-part .main-box #scene .drink img {
+    width: 100%;
+  }
+  .main-part .main-box .scrolldown-box {
+    width: 50vw;
+    left: 21%;
+    bottom: 10%;
+  }
+  .main-part .main-box .scrolldown-box img {
+    width: 100%;
+  }
+
+  .story-part {
+    padding: 40px 0;
+  }
+  .story-part .text-box h1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .story-part .text-box p {
+    font-size: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,157 @@
+body{
+	background:url(../images/bg3.jpg) no-repeat;
+	background-size:cover;
+	font-family: 'Gentium Book Basic', serif, "微軟正黑體";
+	color:#2F0800;
+}
+
+.container{
+	/*background:rgba(255,255,255,0.4);*/
+	background:-webkit-linear-gradient(top,#FFF,rgba(255,255,255,0.1));
+}
+
+.jumbotron{
+	background:url(../images/c.png) no-repeat;
+	height:719px;
+}
+.jumbotron:hover{
+	opacity:0.8;
+	transition:opacity 1s;
+}
+#news{
+	width:500px;
+	padding:20px;
+	margin-left:30px;
+	background:rgba(255,255,255,0.6);
+	border-radius:5px;
+	letter-spacing:1px;	
+}
+.panel-heading{
+	background:rgba(255,255,255,0.6);
+}
+.title{
+	width:620px;
+	background:rgba(255,255,255,0.7);
+	padding:5px 20px;
+	box-sizing:border-box;
+	border-radius:5px;
+	margin-top:230px;
+	text-align:justify;
+	
+}
+.title h2{
+	font-size:30px;
+	font-weight:bold;
+	letter-spacing:1px;	
+}
+.title p{
+	font-size:13px;
+	letter-spacing:1px;	
+}
+.carousel-inner{
+	width:500px;
+	height:300px;
+	margin-bottom:200px;
+	box-shadow:0px 0px 1px 2px #333;
+}
+
+#carousel-576740{
+	width:500px;
+}
+
+#storytxt{
+	width:450px;
+	padding:20px 50px;
+	box-sizing:border-box;
+	margin:30px 20px 0px 80px;
+	background:rgba(255,255,255,0.7);
+	text-align:justify;
+	border-radius:10px;
+	letter-spacing:1px;	
+}
+.tabbable ul li a:focus{
+	opacity:0.5;
+}
+.tabbable ul li a:link{
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.tabbable ul li a:shown{
+	background:rgba(255,255,255,0.5);
+}
+.tabbable ul li a:hover{
+	background:rgba(255,255,255,0.9);
+	transition:background 1s;
+}
+.tabbable ul li a img{
+	box-shadow:0px 0px 1px 1px #333;
+}
+.tabbable ul li a img:hover{
+	opacity:0.5;
+	transition:opacity 1s;
+}
+.tab-pane{
+	height:719px;
+}
+.description{
+	float:left;
+	margin:100px 0px 0px 150px;
+	box-sizing:border-box;
+	background:rgba(255,255,255,0.7);
+}
+.titlepic{
+	margin:30px 20px;
+}
+.vodiebox{
+	margin-left:60px;
+	padding-bottom:60px;	
+}
+.vodie{
+	float:left;
+	margin:20px;
+	background:url(../images/bg4.jpg) no-repeat center center;
+	background-size:cover;
+	padding:15px 0px 10px 0px;
+	box-sizing:border-box;
+}
+.thumbnail{
+	background:rgba(255,255,255,0.6);
+	text-align:justify;
+}
+.thumbnail img:hover{
+	opacity:0.7;
+}
+.thumbnail h3{
+	text-align:center;
+	font-weight:bold;
+}
+.thumbnail .txt{
+	padding:5px 20px 20px 20px;
+}
+.enter{
+	background:rgba(81, 50, 25, 0.9);
+	padding:10px;
+	border-radius:5px;
+	box-sizing:border-box;
+	color:#FFF;
+	margin:30px 130px;
+}
+.enter:hover{
+	background:rgba(81, 50, 25, 0.6);
+	color:#FFF;
+	text-decoration:none;
+}
+.enter:focus{
+	background:rgba(81, 50, 25, 0.6);
+	color:#FFF;
+	text-decoration:none;
+}
+#panelbox{
+	background:rgba(255,255,255,0.6);
+}
+#panel-11{
+	background:rgba(255,255,255,0.5);
+}
+#panel-13{
+	background:rgba(255,255,255,0.5);
+}
