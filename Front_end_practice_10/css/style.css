@@ -72,6 +72,7 @@ ul {
 .nav-wrap .nav-bar-wrap .navbar-left-wrap .mobile-menu-btn {
   display: none;
   margin-right: 24px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1199.98px) {
   .nav-wrap .nav-bar-wrap .navbar-left-wrap .mobile-menu-btn {
@@ -92,13 +93,13 @@ ul {
   width: 18px;
   height: 2px;
   background-color: #2E2F6B;
-  transition: 0.3s;
 }
 .nav-wrap .nav-bar-wrap .navbar-left-wrap .mobile-menu-btn span {
   margin: 4px 0;
 }
 .nav-wrap .nav-bar-wrap .navbar-left-wrap .mobile-menu-btn::before, .nav-wrap .nav-bar-wrap .navbar-left-wrap .mobile-menu-btn::after {
   content: "";
+  transition: 0.3s;
 }
 .nav-wrap .nav-bar-wrap .navbar-right-wrap {
   display: flex;
@@ -192,6 +193,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .nav-wrap .mobile-menu-wrap .menu-list .menu-item .sub-menu-list {
   height: 0;

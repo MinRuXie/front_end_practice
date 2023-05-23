@@ -107,6 +107,7 @@ ul {
             .mobile-menu-btn {
                 display: none;
                 margin-right: 24px;
+                cursor: pointer;
     
                 @media screen and (max-width: 1199.98px) {
                     display: block;
@@ -142,7 +143,6 @@ ul {
                     width: 18px;
                     height: 2px;
                     background-color: $color-dark-blue;
-                    transition: 0.3s;
                 }
     
                 span {
@@ -152,6 +152,7 @@ ul {
                 &::before,
                 &::after {
                     content: '';
+                    transition: 0.3s;
                 }
             }
         }
@@ -279,6 +280,7 @@ ul {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    cursor: pointer;
                 }
 
                 .sub-menu-list {
