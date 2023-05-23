@@ -10,3 +10,4 @@
 * 2019 模仿網站切 - Wanpo Tea：https://minruxie.github.io/front_end_practice/Front_end_practice_7
 * 2019 模仿網站切 - sushi-express：https://minruxie.github.io/front_end_practice/Front_end_practice_8
 * 2019 模仿網站切 - Richart 活動頁動畫部分：https://minruxie.github.io/front_end_practice/Front_end_practice_9
+* 2023 照稿&模仿網站切 - Cenports 2.0：https://minruxie.github.io/front_end_practice/Front_end_practice_10
