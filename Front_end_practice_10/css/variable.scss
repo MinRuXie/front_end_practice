@@ -1,0 +1,52 @@
+//------------------
+// Font
+//------------------
+
+// OpenSans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+// Aileron
+@import url("https://use.typekit.net/phb0yld.css");
+
+
+$font-heading: "aileron", sans-serif;;
+$font-content: 'Open Sans', sans-serif;
+
+
+//------------------
+// Color
+//------------------
+
+// Dark Blue
+$color-dark-blue: #2E2F6B;
+
+// Green
+$color-green-200: #01E4B3;
+$color-green-300: #03CFA3;
+
+// Yellow
+$color-yellow-100: #F9D88D;
+$color-yellow-200: #F3B11C;
+
+// Pink
+$color-pink-200: #FF007A;
+$color-pink-300: #E7006F;
+
+// Purple
+$color-purple-200: #7132FF;
+$color-purple-300: #5E2BD0;
+
+// Natural
+$color-n-100: #FFFFFF;
+$color-n-200: #F0F0F0;
+$color-n-300: #D2D2D2;
+$color-n-400: #B4B4B4;
+$color-n-500: #979797;
+$color-n-600: #797979;
+$color-n-700: #5B5B5C;
+$color-n-800: #3E3E3E;
+$color-n-900: #111112;
+
+// System
+$color-success: #6EC800;
+$color-danger: #EB4646;
