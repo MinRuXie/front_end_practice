@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 @import url("https://use.typekit.net/phb0yld.css");
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -10,6 +15,61 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "aileron", sans-serif;
   font-weight: 700;
   line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 42px;
+}
+@media screen and (max-width: 1199.98px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+}
+@media screen and (max-width: 1199.98px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+}
+@media screen and (max-width: 1199.98px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+}
+@media screen and (max-width: 1199.98px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+}
+@media screen and (max-width: 1199.98px) {
+  h5 {
+    font-size: 18px;
+  }
+}
+
+h6 {
+  font-size: 18px;
+}
+@media screen and (max-width: 1199.98px) {
+  h6 {
+    font-size: 16px;
+  }
 }
 
 p {
@@ -121,6 +181,11 @@ ul {
 }
 .nav-wrap .nav-bar-wrap .menu-list .menu-item {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.nav-wrap .nav-bar-wrap .menu-list .menu-item i {
+  margin-left: 8.32px;
 }
 .nav-wrap .nav-bar-wrap .menu-list .menu-item a {
   text-decoration: none;

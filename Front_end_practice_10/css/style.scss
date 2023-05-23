@@ -1,6 +1,8 @@
 // Variable
 @import 'variable';
 
+// Mixin
+@import 'mixin';
 
 
 // General
@@ -13,30 +15,55 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-heading;
     font-weight: 700;
     line-height: 1.25;
+    letter-spacing: 0.02em; //figma 2%
 }
 
 h1 {
-    
+    font-size: 42px;
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 40px;
+    }
 }
 
 h2 {
-    
+    font-size: 36px;
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 28px;
+    }
 }
 
 h3 {
-    
+    font-size: 30px;
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 24px;
+    }
 }
 
 h4 {
+    font-size: 24px;
 
+    @media screen and (max-width: 1199.98px) {
+        font-size: 20px;
+    }
 }
 
 h5 {
+    font-size: 20px;
 
+    @media screen and (max-width: 1199.98px) {
+        font-size: 18px;
+    }
 }
 
 h6 {
+    font-size: 18px;
 
+    @media screen and (max-width: 1199.98px) {
+        font-size: 16px;
+    }
 }
 
 
@@ -179,6 +206,12 @@ ul {
     
             .menu-item {
                 position: relative;
+                display: flex;
+                align-items: center;
+
+                i {
+                    margin-left: 8.32px;
+                }
     
                 a {
                     text-decoration: none;

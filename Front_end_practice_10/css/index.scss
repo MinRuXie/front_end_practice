@@ -1,0 +1,160 @@
+// Variable
+@import 'variable';
+
+// Mixin
+@import 'mixin';
+
+
+.hero {
+    height: 810px;
+    background-color: $color-dark-blue;
+    background-image: url('../images/home/home-hero.png');
+    background-repeat: no-repeat;
+    background-position: 100% 90px;
+    background-size: auto 690px;
+
+    @media screen and (max-width: 1199.98px) {
+        height: auto;
+        background-image: none;
+    }
+
+    .hero-inner-wrap {
+
+        @media screen and (min-width: 1199.99px) {
+            height: 810px;
+            padding-top: 90px;
+        }
+
+        .inner-left-wrap {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media screen and (max-width: 1199.98px) {
+                padding: 20px 0 50px;
+            }
+
+            h1 {
+                color: $color-n-100;
+
+                @media screen and (max-width: 1199.98px) {
+                    font-size: 32px;
+                }
+            }
+    
+            p {
+                color: $color-n-300;
+                margin: 15px 0 30px;
+
+                @media screen and (max-width: 1199.98px) {
+                    margin: 10px 0 30px;
+                }
+            }
+    
+            .cta-btn {
+                align-self: baseline;
+            }
+        }
+    }
+
+    // mobile hero image
+    .mobile-hero-image-wrap {
+        display: none;
+        padding-top: 76px;
+
+        @media screen and (max-width: 1199.98px) {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
+
+.feature {
+    padding-top: 100px;
+
+    @media screen and (max-width: 1199.98px) {
+        padding-top: 72px;
+    }
+
+    .feature-text-wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        &.layout-right {
+
+            @media screen and (min-width: 1199.99px) {
+                padding-left: 48px;
+            }
+        }
+
+        &.layout-left {
+            @media screen and (min-width: 1199.99px) {
+                padding-right: 48px;
+            }
+        }
+
+        &.layout-right,
+        &.layout-left {
+            @media screen and (max-width: 1199.98px) {
+                padding-top: 30px;
+            }
+        }
+    }
+
+    .feature-image-wrap {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.feature-3 {
+    padding-bottom: 100px;
+
+    @media screen and (max-width: 1199.98px) {
+        padding-bottom: 72px;
+    }
+}
+
+
+
+.partners {
+    padding-top: 30px;
+
+    .partners-inner-wrap {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        gap: 24px 6px;
+
+        @media screen and (max-width: 1199.98px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .image-wrap {
+            filter: grayscale(100%);
+            transition: 0.3s;
+
+            &:hover {
+                filter: grayscale(0);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
