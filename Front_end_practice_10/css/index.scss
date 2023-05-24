@@ -158,3 +158,92 @@
         }
     }
 }
+
+
+.products {
+    padding: 100px 0 calc(100vw / 4);
+    background-color: rgba($color-yellow-200, 0.1);
+    background-image: url('../images/home/home_feature_andtribute.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+
+    @media screen and (max-width: 1023px) {
+        padding: 71.55px 0 calc(100vw / 1.5);
+        background-size: 285%;
+        background-position: bottom center;
+    }
+
+    .products-inner-wrap {
+        text-align: center;
+
+        p {
+            margin: 15px 0 50px;
+        }
+    }
+}
+
+
+.cta {
+    padding: 74.17px 0 80px;
+    background-color: rgba($color-green-200, 0.1);
+
+    @media screen and (max-width: 1199.98px) {
+        padding: 62.41px 0 50px;
+    }
+
+    .cta-inner-wrap {
+        text-align: center;
+
+        .icon-wrap {
+            font-size: 58px;
+
+            i {
+                font-family: 'icomoon' !important;
+
+                &.path1, &.path2 {
+                    &::before {
+                        color: $color-purple-200;
+                    }
+                }
+            }
+        }
+
+        h2 {
+            margin: 24.2px 0 30px;
+
+            @media screen and (max-width: 1199.98px) {
+                margin: 21.98px 0 30px;
+            }
+        }
+    }
+}
+
+
+.overview {
+    padding: 100px 0;
+
+    @media screen and (max-width: 1199.98px) {
+        padding: 50px 0;
+    }
+
+    .overview-inner-wrap {
+        text-align: center;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 1199.98px) {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+    }
+
+    .overview-card-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 24px; //row column
+
+        @media screen and (max-width: 1199.98px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
