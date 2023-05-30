@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://use.typekit.net/phb0yld.css");
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hero-section {
+  padding-top: 90px;
+  height: 810px;
+  background-color: #2E2F6B;
+}
+@media screen and (max-width: 1199.98px) {
+  .hero-section {
+    height: auto;
+  }
+}
+@media screen and (min-width: 1199.99px) {
+  .hero-section .hero-inner-wrap {
+    height: 720px;
+  }
+}
+.hero-section .hero-inner-wrap .inner-left-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 1199.98px) {
+  .hero-section .hero-inner-wrap .inner-left-wrap {
+    padding: 20px 0 50px;
+  }
+}
+.hero-section .hero-inner-wrap .inner-left-wrap h6 {
+  color: #01E4B3;
+}
+.hero-section .hero-inner-wrap .inner-left-wrap h1 {
+  color: #FFFFFF;
+  margin: 8px 0 15px;
+}
+@media screen and (max-width: 1199.98px) {
+  .hero-section .hero-inner-wrap .inner-left-wrap h1 {
+    font-size: 32px;
+  }
+}
+.hero-section .hero-inner-wrap .inner-left-wrap p {
+  color: #D2D2D2;
+}
+.hero-section .hero-inner-wrap .inner-left-wrap .cta-btn {
+  align-self: baseline;
+}
+@media screen and (min-width: 1199.99px) {
+  .hero-section .hero-image-wrap {
+    height: 720px;
+  }
+}
+.hero-section .hero-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cta-section {
+  padding: 74.17px 0 80px;
+  background-color: rgba(1, 228, 179, 0.1);
+}
+@media screen and (max-width: 1199.98px) {
+  .cta-section {
+    padding: 62.41px 0 50px;
+  }
+}
+.cta-section .cta-inner-wrap {
+  text-align: center;
+}
+.cta-section .cta-inner-wrap .icon-wrap {
+  font-size: 58px;
+}
+.cta-section .cta-inner-wrap .icon-wrap i {
+  font-family: "icomoon" !important;
+}
+.cta-section .cta-inner-wrap .icon-wrap i.path1::before, .cta-section .cta-inner-wrap .icon-wrap i.path2::before {
+  color: #7132FF;
+}
+.cta-section .cta-inner-wrap h2 {
+  margin: 24.2px 0 30px;
+}
+@media screen and (max-width: 1199.98px) {
+  .cta-section .cta-inner-wrap h2 {
+    margin: 21.98px 0 30px;
+  }
+}
+
+/*# sourceMappingURL=template.css.map */

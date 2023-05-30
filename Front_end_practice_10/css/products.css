@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://use.typekit.net/phb0yld.css");
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.oms-section {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+}
+.oms-section .easier-section {
+  padding: 100px 0 0;
+}
+@media screen and (max-width: 1199.98px) {
+  .oms-section .easier-section {
+    padding: 72px 0;
+  }
+}
+.oms-section .oms-header {
+  padding: 100px 0;
+}
+@media screen and (max-width: 1199.98px) {
+  .oms-section .oms-header {
+    padding: 72px 0 30px;
+  }
+}
+.oms-section .oms-header .oms-header-inner {
+  text-align: center;
+}
+@media screen and (max-width: 1199.98px) {
+  .oms-section .oms-header .oms-header-inner {
+    text-align: left;
+  }
+}
+.oms-section .oms-header .oms-header-inner h6 {
+  margin-bottom: 7px;
+  color: #7132FF;
+}
+.oms-section .oms-body {
+  overflow-x: hidden;
+}
+.oms-section .oms-body .oms-body-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media screen and (max-width: 1199.98px) {
+  .oms-section .oms-body .oms-body-info {
+    height: auto;
+    margin: 30px 0 0;
+  }
+}
+.oms-section .oms-body .oms-body-info h3 {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1199.98px) {
+  .oms-section .oms-body .oms-body-info h3 {
+    margin-bottom: 10px;
+  }
+}
+.oms-section .oms-body .oms-body-image {
+  width: 56.73vw;
+}
+@media screen and (max-width: 1199.98px) {
+  .oms-section .oms-body .oms-body-image {
+    width: calc(100vw - 24px);
+  }
+}
+.oms-section .oms-body .oms-body-image img {
+  width: 100%;
+}
+.oms-section .oms-body .oms-body-image.left {
+  float: right;
+}
+.oms-section .oms-footer {
+  padding: 72px 0 150px;
+}
+@media screen and (max-width: 1199.98px) {
+  .oms-section .oms-footer {
+    padding: 50px 0 72px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .oms-section .oms-footer .oms-footer-image {
+    margin-bottom: 30px;
+  }
+}
+.oms-section .oms-footer .oms-footer-image .logo-wrap.gyber {
+  height: 96px;
+}
+.oms-section .oms-footer .oms-footer-image .logo-wrap.luxeo {
+  height: 36px;
+}
+.oms-section .oms-footer .oms-footer-image .logo-wrap img {
+  height: 100%;
+  object-fit: contain;
+}
+.oms-section .oms-footer .oms-footer-info {
+  display: flex;
+  flex-direction: column;
+}
+.oms-section .oms-footer .oms-footer-info .info-upper-wrap {
+  margin-bottom: 30px;
+}
+.oms-section .oms-footer .oms-footer-info .info-upper-wrap h5 {
+  color: #111112;
+  line-height: 2;
+}
+.oms-section .oms-footer .oms-footer-info .info-lower-wrap {
+  display: flex;
+}
+.oms-section .oms-footer .oms-footer-info .info-lower-wrap .avtar-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+.oms-section .oms-footer .oms-footer-info .info-lower-wrap .avtar-wrap.pink {
+  background-color: #FF007A;
+}
+.oms-section .oms-footer .oms-footer-info .info-lower-wrap .avtar-wrap.yellow {
+  background-color: #F3B11C;
+}
+.oms-section .oms-footer .oms-footer-info .info-lower-wrap .text-wrap {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #111112;
+  display: flex;
+  flex-direction: column;
+}
+.oms-section .oms-footer .oms-footer-info .info-lower-wrap .text-wrap .name-wrap {
+  font-weight: 700;
+}
+
+.better {
+  padding: 100px 0;
+}
+@media screen and (max-width: 1199.98px) {
+  .better {
+    padding: 72px 0;
+  }
+}
+.better .better-header {
+  text-align: center;
+}
+@media screen and (max-width: 1199.98px) {
+  .better .better-header {
+    text-align: left;
+  }
+}
+.better .better-header p {
+  margin: 15px 0 30px;
+}
+@media screen and (max-width: 1199.98px) {
+  .better .better-header p {
+    margin: 10px 0 30px;
+  }
+}
+.better .better-image img {
+  width: 100%;
+}
+
+.faq {
+  padding: 100px 0;
+  border-top: 1px solid #F0F0F0;
+}
+@media screen and (max-width: 1199.98px) {
+  .faq {
+    padding: 72px 0;
+  }
+}
+.faq .faq-left .pc-show {
+  margin-top: 15px;
+}
+@media screen and (max-width: 1199.98px) {
+  .faq .faq-left .pc-show {
+    display: none;
+  }
+}
+.faq .faq-right .mobile-show {
+  display: none;
+}
+@media screen and (max-width: 1199.98px) {
+  .faq .faq-right .mobile-show {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=products.css.map */

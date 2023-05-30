@@ -1,0 +1,228 @@
+// Variable
+@import 'variable';
+
+// Mixin
+@import 'mixin';
+
+
+
+.oms-section {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+
+    .easier-section {
+        padding: 100px 0 0;
+
+        @media screen and (max-width: 1199.98px) {
+            padding: 72px 0;
+        }
+    }
+
+    .oms-header {
+        padding: 100px 0;
+    
+        @media screen and (max-width: 1199.98px) {
+            padding: 72px 0 30px;
+        }
+    
+        .oms-header-inner {
+            text-align: center;
+    
+            @media screen and (max-width: 1199.98px) {
+                text-align: left;
+            }
+    
+            h6 {
+                margin-bottom: 7px;
+                color: $color-purple-200;
+            }
+        }
+    }
+    
+    // 字與破格圖
+    .oms-body {
+        overflow-x: hidden;
+    
+        .oms-body-info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+    
+            @media screen and (max-width: 1199.98px) {
+                height: auto;
+                margin: 30px 0 0;
+            }
+    
+            h3 {
+                margin-bottom: 15px;
+    
+                @media screen and (max-width: 1199.98px) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    
+        .oms-body-image {
+            width: 56.73vw;
+    
+            @media screen and (max-width: 1199.98px) {
+                width: calc(100vw - 24px);
+            }
+    
+            img {
+                width: 100%;
+            }
+    
+            // 左破格圖
+            &.left {
+                float: right;
+            }
+        }
+    }
+    
+    // 字與logo
+    .oms-footer {
+        padding: 72px 0 150px;
+    
+        @media screen and (max-width: 1199.98px) {
+            padding: 50px 0 72px;
+        }
+        
+        .oms-footer-image {
+    
+            @media screen and (max-width: 1199.98px) {
+                margin-bottom: 30px;
+            }
+    
+            .logo-wrap {
+    
+                &.gyber {
+                    height: 96px;
+                }
+    
+                &.luxeo {
+                    height: 36px;
+                }
+                
+    
+                img {
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    
+        .oms-footer-info {
+            display: flex;
+            flex-direction: column;
+    
+            .info-upper-wrap {
+                margin-bottom: 30px;
+    
+                h5 {
+                    color: $color-n-900;
+                    line-height: 2;
+                }
+            }
+    
+            .info-lower-wrap {
+                display: flex;
+    
+                .avtar-wrap {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 100px;
+                    margin-right: 20px;
+    
+                    &.pink {
+                        background-color: $color-pink-200;
+                    }
+    
+                    &.yellow {
+                        background-color: $color-yellow-200;
+                    }
+                }
+    
+                .text-wrap {
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: .02em;
+                    color: $color-n-900;
+                    display: flex;
+                    flex-direction: column;
+    
+                    .name-wrap {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.better {
+    padding: 100px 0;
+
+    @media screen and (max-width: 1199.98px) {
+        padding: 72px 0;
+    }
+
+    .better-header {
+        text-align: center;
+
+        @media screen and (max-width: 1199.98px) {
+            text-align: left;
+        }
+
+        p {
+            margin: 15px 0 30px;
+
+            @media screen and (max-width: 1199.98px) {
+                margin: 10px 0 30px;
+            }
+        }
+    }
+
+    .better-image {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+.faq {
+    padding: 100px 0;
+    border-top: 1px solid $color-n-200;
+
+    @media screen and (max-width: 1199.98px) {
+        padding: 72px 0;
+    }
+
+    .faq-left {
+
+        .pc-show {
+            margin-top: 15px;
+
+            @media screen and (max-width: 1199.98px) {
+                display: none;
+            }
+        }
+    }
+
+    .faq-right {
+
+        .mobile-show {
+            display: none;
+
+            @media screen and (max-width: 1199.98px) {
+                display: block;
+            }
+        }
+    }
+}
