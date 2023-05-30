@@ -262,6 +262,12 @@ p {
                         margin-top: 15px;
                     }
                     .sub-menu-item {
+                        &.active {
+                            > a {
+                                color: $color-purple-300;
+                            }
+                        }
+
                         a {
                             text-decoration: none;
                             white-space: nowrap;

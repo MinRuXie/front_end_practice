@@ -41,13 +41,11 @@
 @media screen and (max-width: 1199.98px) {
   .hero-section .hero-inner-wrap .inner-left-wrap h1 {
     font-size: 32px;
+    margin: 8px 0 10px;
   }
 }
 .hero-section .hero-inner-wrap .inner-left-wrap p {
   color: #D2D2D2;
-}
-.hero-section .hero-inner-wrap .inner-left-wrap .cta-btn {
-  align-self: baseline;
 }
 @media screen and (min-width: 1199.99px) {
   .hero-section .hero-image-wrap {
@@ -87,6 +85,32 @@
 @media screen and (max-width: 1199.98px) {
   .cta-section .cta-inner-wrap h2 {
     margin: 21.98px 0 30px;
+  }
+}
+
+.faq {
+  padding: 100px 0;
+  border-top: 1px solid #F0F0F0;
+}
+@media screen and (max-width: 1199.98px) {
+  .faq {
+    padding: 72px 0;
+  }
+}
+.faq .faq-left .pc-show {
+  margin-top: 15px;
+}
+@media screen and (max-width: 1199.98px) {
+  .faq .faq-left .pc-show {
+    display: none;
+  }
+}
+.faq .faq-right .mobile-show {
+  display: none;
+}
+@media screen and (max-width: 1199.98px) {
+  .faq .faq-right .mobile-show {
+    display: block;
   }
 }
 

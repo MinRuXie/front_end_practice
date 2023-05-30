@@ -163,30 +163,4 @@
   width: 100%;
 }
 
-.faq {
-  padding: 100px 0;
-  border-top: 1px solid #F0F0F0;
-}
-@media screen and (max-width: 1199.98px) {
-  .faq {
-    padding: 72px 0;
-  }
-}
-.faq .faq-left .pc-show {
-  margin-top: 15px;
-}
-@media screen and (max-width: 1199.98px) {
-  .faq .faq-left .pc-show {
-    display: none;
-  }
-}
-.faq .faq-right .mobile-show {
-  display: none;
-}
-@media screen and (max-width: 1199.98px) {
-  .faq .faq-right .mobile-show {
-    display: block;
-  }
-}
-
 /*# sourceMappingURL=products.css.map */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Fulfilmant Network - Cenports 2.0</title>
     <link rel="icon" href="./images/cropped-Artboard-6-copy-3@2x-8-1-32x32.png" size="32x32">
 
     <!-- Bootstrap -->
@@ -16,7 +16,13 @@
     <!-- Custom -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/services-fulfillment-network.css">
 
+    <!-- amCharts -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
 </head>
 <body>
 
@@ -27,18 +33,18 @@
                 <div id="js-mobile-menu-btn" class="mobile-menu-btn">
                     <span></span>
                 </div>
-                <a href="#" class="logo-wrap">
+                <a href="index.html" class="logo-wrap">
                     <img src="images/L-Reversed@2x-8-e1655112099332.png" alt="logo">
                 </a>
                 <!-- pc only -->
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="#">Products</a></li>
+                    <li class="menu-item"><a href="products.html">Products</a></li>
                     <li class="menu-item">
-                        <a href="#">Services</a>
+                        <a href="services.html">Services</a>
                         <i class="icon-angle-down"></i>
                         <ul class="sub-menu-list">
-                            <li class="sub-menu-item"><a href="#">Sales Management</a></li>
-                            <li class="sub-menu-item"><a href="#">Fulfilmant Network</a></li>
+                            <li class="sub-menu-item"><a href="services-sales-management.html">Sales Management</a></li>
+                            <li class="sub-menu-item active"><a href="#">Fulfilmant Network</a></li>
                         </ul>
                     </li>
                     <li class="menu-item"><a href="#">Integrations</a></li>
@@ -58,16 +64,16 @@
         <div id="js-mobile-menu" class="mobile-menu-wrap">
             <div class="menu-upper-wrap">
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="#">Home</a></li>
-                    <li class="menu-item"><a href="#">Products</a></li>
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="products.html">Products</a></li>
                     <li class="menu-item">
                         <div id="js-sub-menu-btn" class="item-inner-wrap">
-                            <a href="#">Services</a>
+                            <a href="services.html">Services</a>
                             <i class="icon-angle-down"></i>
                         </div>
                         <ul id="js-sub-menu" class="sub-menu-list">
-                            <li class="sub-menu-item"><a href="#">Sales Management</a></li>
-                            <li class="sub-menu-item"><a href="#">Fulfilmant Network</a></li>
+                            <li class="sub-menu-item"><a href="services-sales-management.html">Sales Management</a></li>
+                            <li class="sub-menu-item active"><a href="#">Fulfilmant Network</a></li>
                         </ul>
                     </li>
                     <li class="menu-item"><a href="#">Integrations</a></li>
@@ -83,8 +89,7 @@
             <a href="#" class="cta-btn style-purple size-large">Contact Us</a>
         </div>
     </nav>
-
-
+    
     <main>
 
         <!-- Hero -->
@@ -94,15 +99,15 @@
                     <div class="col-12 col-xl-5 col-xxl-5 order-2 order-xl-1 order-xxl-1">
                         <div class="hero-inner-wrap">
                             <div class="inner-left-wrap">
-                                <h6>Product</h6>
-                                <h1>ERP Software for eCommerce</h1>
-                                <p class="paragraph-regular">Learn how Cenports’ software can pave your way to transformative growth with automation, integration, and actionable reporting insights.</p>
+                                <h6>CFN</h6>
+                                <h1>Warehousing & Fulfillment Services to Expand Your Business</h1>
+                                <p class="paragraph-regular">Our U.S.-based warehousing & fulfillment solutions integrate smoothly with all industry-leading platforms, simplifying Amazon fulfillment and providing drop-shipping solutions for your business with unlimited sales channel connections. Streamline your eCommerce operations for one flat fee. </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-xl-7 col-xxl-7 order-1 order-xl-2 order-xxl-2">
                         <div class="hero-image-wrap">
-                            <img src="./images/products/illustration_product_hero.png" alt="hero">
+                            <img src="./images/cfn/illustration_cfn_hero.png" alt="hero">
                         </div>
                     </div>
                 </div>
@@ -110,7 +115,69 @@
         </section>
 
 
+        <!-- Fulfillmant -->
+        <section class="fulfillment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-12 col-xxl-12">
+                        <div class="fulfillment-header">
+                            <h2>Cenports Fulfillment Network</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-6 col-xxl-6">
+                        <div class="fulfillment-image">
+                            <img src="./images/cfn/home-feature-sales-channels.png" alt="sales-channels">
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 col-xxl-6">
+                        <div class="fulfillment-info">
+                            <h3>3PL Dropshipping Solutions to Help Overseas Manufacturers Fulfill Orders in U.S.</h3>
+                            <ul class="info-list">
+                                <li class="info-item">
+                                    <p class="paragraph-regular">Low Pricing: Flat Fee for Pick, Pack, and Ship</p>
+                                </li>
+                                <li class="info-item">
+                                    <p class="paragraph-regular">No Long-Term Contracts</p>
+                                </li>
+                                <li class="info-item">
+                                    <p class="paragraph-regular">Discounts of <span class="bold">up to 60%</span> on ocean freight from Asia</p>
+                                </li>
+                                <li class="info-item">
+                                    <p class="paragraph-regular">30-Minute Ride from Port of Oakland</p>
+                                </li>
+                                <li class="info-item">
+                                    <p class="paragraph-regular">Integration with Major Sales Channels</p>
+                                </li>
+                                <li class="info-item">
+                                    <p class="paragraph-regular">One Dashboard with Real-Time Reports and Insights</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+
+        <!-- map -->
+        <section class="map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-12 col-xxl-12">
+                        <div class="map-header">
+                            <h2>Intelligent Order Routing</h2>
+                            <p class="paragraph-regular">More partner warehouse is coming!</p>
+                        </div>
+                        <div class="map-wrap">
+                            <!-- amCharts -->
+                            <div id="chartdiv"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- FAQ -->
         <section class="faq">
@@ -133,60 +200,48 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Can we integrate with retail channels outside of your network?
+                                            Are there setup and integration fees?
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Yes! Cenports has already integrated with over 60 retail channels and we’re always expanding. If you work with a channel that we are currently not integrated with, reach out to us at <a href="#" class="text-link">sales@cenports.com</a> and we’ll get you a quote.
+                                            Although there are no setup fees, we do request a $500 deposit to fund your account. The funds will be used for charges that may accrue during packaging and shipments. Integrations fees will ONLY be charged for private accounts.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Can your dashboard upload products onto multiple channels?
+                                            Where can I find the pricing list?
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Our dashboard has a Catalog feature that allows you to seamlessly manage all your products all in one place. Due to every channel’s product upload systems being different, we do not have direct uploads but we do have an export option where you can adjust to the required format of each channel.
+                                            Please contact our sales team to get the most up-to-date pricing at <a href="#" class="text-link">sales@cenports.com</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Can your dashboard integrate directly with our WMS?
+                                            Do you handle returns?
                                         </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Whether your company operates on a standard or custom-built application, you can connect to the Cenports Dashboard through API.
+                                            Yes. Our fees depend on the work required and are determined on a company-by-company, product-by-product basis. Simple quality checks keep fees low, but electronic inspections and other measures will cost more.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFour">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            How long does it take to get started with Cenports?
+                                            What’s included in your shipping charges?
                                         </button>
                                     </h2>
                                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            It really depends on a few things. You’ll receive access to your own Cenports Dashboard account within 24 hours but depending on the integrations, some channels may take longer than others. If you would like more information on integration timelines, we are more than happy to schedule a call to discuss.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            Can Cenports Dashboard show reports with product performance?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Yes! Not only do we show product performance. We show top performers by state, per channel, and more. Schedule a demo today!
+                                            Our fulfillment includes shipping, packaging materials, and shipping labels. We charge by weight (details provided in our pricing guide). If you prefer that we use your shipping account, we will, but we generally have more competitive pricing because of our volume discounts.
                                         </div>
                                     </div>
                                 </div>
@@ -214,7 +269,7 @@
                                     <i class="path1"></i><i class="path2"></i>
                                 </span>
                             </div>
-                            <h2>Contact Us and Get a Demo Today!</h2>
+                            <h2>Want to Know More Details?</h2>
                             <a href="#" class="cta-btn style-purple size-large">Contact Us</a>
                         </div>
                     </div>
@@ -222,14 +277,9 @@
             </div>
         </section>
 
-
-
-
-
     </main>
 
-
-
+    <!-- footer -->
     <footer class="footer-wrap">
         <div class="footer-upper-wrap">
             <div class="logo-wrap">
@@ -276,6 +326,7 @@
     </footer>
 
 
+
     <!-- jQuery -->
     <script src="js/plugins/jquery-3.3.1.min.js"></script>
 
@@ -284,5 +335,6 @@
 
     <!-- Custom -->
     <script src="js/main.js"></script>
+    <script src="js/services-fulfillment-network.js"></script>
 </body>
 </html>

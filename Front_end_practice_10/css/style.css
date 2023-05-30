@@ -223,6 +223,9 @@ p {
 .nav-wrap .nav-bar-wrap .menu-list .menu-item .sub-menu-list .sub-menu-item + .sub-menu-item {
   margin-top: 15px;
 }
+.nav-wrap .nav-bar-wrap .menu-list .menu-item .sub-menu-list .sub-menu-item.active > a {
+  color: #5E2BD0;
+}
 .nav-wrap .nav-bar-wrap .menu-list .menu-item .sub-menu-list .sub-menu-item a {
   text-decoration: none;
   white-space: nowrap;

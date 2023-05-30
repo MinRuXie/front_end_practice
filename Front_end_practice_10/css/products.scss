@@ -9,6 +9,7 @@
 .oms-section {
     background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
 
+    // 最後一個區塊
     .easier-section {
         padding: 100px 0 0;
 
@@ -38,7 +39,7 @@
         }
     }
     
-    // 字與破格圖
+    // 版型-字與破格圖
     .oms-body {
         overflow-x: hidden;
     
@@ -81,7 +82,7 @@
         }
     }
     
-    // 字與logo
+    // 版型-字與logo
     .oms-footer {
         padding: 72px 0 150px;
     
@@ -190,39 +191,6 @@
     .better-image {
         img {
             width: 100%;
-        }
-    }
-}
-
-
-
-.faq {
-    padding: 100px 0;
-    border-top: 1px solid $color-n-200;
-
-    @media screen and (max-width: 1199.98px) {
-        padding: 72px 0;
-    }
-
-    .faq-left {
-
-        .pc-show {
-            margin-top: 15px;
-
-            @media screen and (max-width: 1199.98px) {
-                display: none;
-            }
-        }
-    }
-
-    .faq-right {
-
-        .mobile-show {
-            display: none;
-
-            @media screen and (max-width: 1199.98px) {
-                display: block;
-            }
         }
     }
 }
