@@ -69,12 +69,17 @@
 }
 @media screen and (max-width: 1199.98px) {
   .map .map-header {
-    padding: 72px 0;
+    padding: 72px 0 30px;
     text-align: left;
   }
 }
 .map .map-header h2 {
   margin-bottom: 15px;
+}
+@media screen and (max-width: 1199.98px) {
+  .map .map-header h2 {
+    margin-bottom: 10px;
+  }
 }
 .map .map-wrap {
   border: 1px solid rgba(255, 0, 122, 0.1);
